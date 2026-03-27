@@ -18,59 +18,17 @@ export function Marceline({ className = "" }: MarcelineProps) {
         ease: "easeInOut",
       }}
     >
-      <svg viewBox="0 0 100 130" className="w-full h-full">
-        {/* Cuerpo */}
-        <rect x="38" y="68" width="24" height="30" rx="4" fill="#374151" stroke="#000" strokeWidth="3" />
-        
-        {/* Brazos */}
-        <ellipse cx="30" cy="75" rx="6" ry="16" fill="#9CA3AF" stroke="#000" strokeWidth="3" />
-        <ellipse cx="70" cy="75" rx="6" ry="16" fill="#9CA3AF" stroke="#000" strokeWidth="3" />
-        
-        {/* Cuello */}
-        <rect x="45" y="60" width="10" height="10" fill="#9CA3AF" stroke="#000" strokeWidth="2" />
-        
-        {/* Cabeza */}
-        <ellipse cx="50" cy="42" rx="20" ry="22" fill="#9CA3AF" stroke="#000" strokeWidth="3" />
-        
-        {/* Cabello largo */}
-        <path
-          d="M32,35 Q30,20 35,15 Q40,12 50,12 Q60,12 65,15 Q70,20 68,35 L68,50 Q68,60 65,60 L60,80 L40,80 L35,60 Q32,60 32,50 Z"
-          fill="#1E293B"
-          stroke="#000"
-          strokeWidth="3"
-        />
-        
-        {/* Flequillo */}
-        <ellipse cx="50" cy="28" rx="22" ry="12" fill="#1E293B" stroke="#000" strokeWidth="3" />
-        
-        {/* Ojos */}
-        <ellipse cx="42" cy="42" rx="4" ry="5" fill="#000" />
-        <ellipse cx="58" cy="42" rx="4" ry="5" fill="#000" />
-        
-        {/* Sonrisa con colmillos */}
-        <path
-          d="M40,50 Q50,56 60,50"
-          fill="none"
-          stroke="#000"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-        <path d="M45,50 L45,54" stroke="#000" strokeWidth="2" strokeLinecap="round" />
-        <path d="M55,50 L55,54" stroke="#000" strokeWidth="2" strokeLinecap="round" />
-        
-        {/* Bajo/Guitarra pequeña */}
-        <g transform="translate(65, 70)">
-          <rect x="0" y="0" width="8" height="25" rx="2" fill="#DC2626" stroke="#000" strokeWidth="2" />
-          <ellipse cx="4" cy="28" rx="6" ry="8" fill="#DC2626" stroke="#000" strokeWidth="2" />
-        </g>
-        
-        {/* Piernas */}
-        <rect x="42" y="98" width="7" height="20" rx="3" fill="#1E293B" stroke="#000" strokeWidth="2" />
-        <rect x="51" y="98" width="7" height="20" rx="3" fill="#1E293B" stroke="#000" strokeWidth="2" />
-        
-        {/* Botas */}
-        <ellipse cx="45" cy="120" rx="6" ry="4" fill="#DC2626" stroke="#000" strokeWidth="2" />
-        <ellipse cx="55" cy="120" rx="6" ry="4" fill="#DC2626" stroke="#000" strokeWidth="2" />
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48" className="w-full h-full">
+        <linearGradient id="marceline_gradient" x1="43.948" x2="13.289" y1="53.586" y2="14.817" gradientUnits="userSpaceOnUse">
+          <stop offset=".374" stopColor="#101334"></stop>
+          <stop offset=".663" stopColor="#12173d"></stop>
+          <stop offset="1" stopColor="#1a2258"></stop>
+        </linearGradient>
+        <path fill="url(#marceline_gradient)" d="M42,24c0,9.9-8.1,18-18,18S6,33.9,6,24S14.1,6,24,6S42,14.1,42,24z"></path>
+        <path fill="#ffffff" d="M24,14c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S29.5,14,24,14z M24,30c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S27.3,30,24,30z" opacity=".2"></path>
+        <circle cx="20" cy="22" r="2" fill="#ffffff" opacity=".8"></circle>
+        <circle cx="28" cy="22" r="2" fill="#ffffff" opacity=".8"></circle>
+        <path fill="#ff4d4d" d="M22,28c0,0,1,2,2,2s2-2,2-2" fillOpacity="0" stroke="#ff4d4d" strokeWidth="1" strokeLinecap="round" opacity=".8"></path>
       </svg>
     </motion.div>
   );
