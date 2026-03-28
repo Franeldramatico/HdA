@@ -405,7 +405,7 @@ export default function App() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="px-8 py-4 bg-gradient-to-r from-[#FCA5F1] to o-[#C084FC] border-4 border-black rounded-3xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-center"
+          className="px-8 py-4 bg-gradient-to-r from-[#FCA5F1] to-[#C084FC] border-4 border-black rounded-3xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-center"
         >
           <div className="font-bold text-lg md:text-xl text-white flex items-center justify-center gap-3">
             <div className="w-6 h-6 flex-shrink-0">
